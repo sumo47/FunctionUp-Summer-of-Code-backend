@@ -9,6 +9,11 @@ const {getSaleData}=require("../controller.js/saleController")
 
 const {forgetPassword,updateForgetPassword}=require("../controller.js/passwordreset")
 
+ 
+router.get('/test', (req,res)=>{
+    res.send("api is working fine")
+})
+
 router.post("/createuser",createData)
 router.post("/login",login)
 router.post("/updateUser",auth,updateOrg)
