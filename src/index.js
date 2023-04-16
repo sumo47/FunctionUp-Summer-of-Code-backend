@@ -23,9 +23,9 @@ mongoose.connect("mongodb+srv://vintiray:7091201680@cluster0.ahtxrqr.mongodb.net
 app.use('/',route) 
 
  
+let port = process.env.PORT ||3001;
 
-
-app.listen(3001 , function(){
-    console.log('Express app running on port ' +(3001))
+app.listen(port , function(){
+    console.log('Express app running on port ' +(port))
 }
 )
